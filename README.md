@@ -1,13 +1,22 @@
-# Image Matching Challenge 2023
+# VRDL Final Project: Image Matching Challenge 2023
+
+## Team members
+- 110550067 簡秉霖
+- 110550165 何存益 
+- 111550020 方漢霖 
+- 110550085 房天越
 
 ## Task
 - Target  
-Reconstruct accurate 3D maps from images of various scenes taken from many different views.  
-Estimate the pose for each image in a set. Each camera pose is parameterized with **a rotation matrix** and **a translation vector**, from an arbitrary frame of reference.  
-The goal is to reach the highest **mean Average Accuracy (mAA)** of the estimated pose.  
+**Reconstruct accurate 3D maps** from images of various scenes taken from many different views.  
+
+    Estimate the pose for each image in a set. Each camera pose is parameterized with **a rotation matrix** and **a translation vector**, from an arbitrary frame of reference.  
+
+    The goal is to reach the highest **mean Average Accuracy (mAA)** of the estimated pose.  
 
 ## Rules and limitations
 - CPU Notebook <= 9 hours run-time  
+
 - GPU Notebook <= 9 hours run-time  
 - Internet access disabled  
 - Freely & publicly available **external data is allowed, including pre-trained models**  
@@ -51,8 +60,10 @@ The goal is to reach the highest **mean Average Accuracy (mAA)** of the estimate
         └── kyiv-puppet-theater
 ```
 - Another directory **/images** lies under each scene directory, which contains all the input images for that specific scene.  
+
 - sample_submission.csv: a valid, randomly-generated sample submission with the following fields:
     - image_path: The image filename, including the path.
+    
     - dataset: The unique identifier for the dataset.
     - scene: The unique identifier for the scene.
     - rotation_matrix: The first target column. A 
